@@ -16,11 +16,11 @@ This project is a submission for the React Component Development Assignment. It 
 
 ### InputField States & Variants
 
-![InputField Showcase](https://placehold.co/600x400.png?text=GIF+of+InputField+features)
+![InputField Showcase](public/input-field.png)
 
 ### DataTable Interactivity
 
-![DataTable Showcase](https://placehold.co/600x400.png?text=GIF+of+DataTable+features)
+![DataTable Showcase](public/data-table.png)
 
 ## ✅ Features
 
