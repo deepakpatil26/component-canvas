@@ -1,8 +1,47 @@
 # Component Canvas: A React Component Showcase
 
-This project is a submission for the React Component Development Assignment. It features two main components, an `InputField` and a `DataTable`, built with React, TypeScript, and TailwindCSS. The application serves as a live demonstration of these components.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
 
-## Getting Started
+This project is a submission for the React Component Development Assignment. It features two main components, an `InputField` and a `DataTable`, built with React, TypeScript, and modern development practices.
+
+## ✨ Live Demo & Storybook
+
+- **Live Application:** `[Your Vercel/Deployment URL]`
+- **Storybook:** `[Your Storybook Deployment URL]`
+
+## 🎬 Showcase
+
+### InputField States & Variants
+
+![InputField Showcase](https://placehold.co/600x400.png?text=GIF+of+InputField+features)
+
+### DataTable Interactivity
+
+![DataTable Showcase](https://placehold.co/600x400.png?text=GIF+of+DataTable+features)
+
+## ✅ Features
+
+### InputField Component
+
+- [x] Text input with label, placeholder, helper text, and error message
+- [x] **States:** disabled, invalid, loading
+- [x] **Variants:** filled, outlined, ghost
+- [x] **Sizes:** small, medium, large
+- [x] **Features:** Clear button and password visibility toggle
+- [x] **Theming:** Supports both light and dark modes.
+
+### DataTable Component
+
+- [x] Displays generic tabular data (`<T>`)
+- [x] Column sorting (ascending/descending)
+- [x] Row selection with checkboxes
+- [x] Loading state with skeleton placeholders
+- [x] Empty state for when no data is available
+
+## 🚀 Getting Started
 
 Follow these instructions to get the project running on your local machine.
 
@@ -15,49 +54,58 @@ Follow these instructions to get the project running on your local machine.
 
 1.  **Clone the repository:**
 
-    ```bash
-    git clone <your-repo-url>
-    cd <repo-directory>
-    ```
+```bash
+   git clone https://github.com/deepakpatil26/component-canvas.git
+   cd component-canvas
+```
 
 2.  **Install dependencies:**
 
-    ```bash
+```bash
     npm install
-    ```
+```
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+### Available Scripts
+
+- **Run the development server:**
+
+```bash
+  npm run dev
+```
 
 The application will be available at `http://localhost:9002`.
 
-## Project Structure
+- **Run tests:**
 
-The project follows a standard Next.js App Router structure with some key directories:
+```bash
+ npm run test
+```
 
-- `src/app/`: Contains the main page (`page.tsx`) that demonstrates the components.
-- `src/components/ui/`: Contains the custom-built `InputField` and `DataTable` components, along with other ShadCN UI primitives.
-- `src/lib/`: Utility functions.
-- `src/styles/`: Global styles and TailwindCSS configuration.
+- **Run Storybook:**
 
-## Approach and Design Choices
+```bash
+  npm run storybook
+```
+
+Storybook will be available at `http://localhost:6006`.
+
+## 🛠️ Approach and Design Choices
 
 ### Component Design
 
-- **`InputField`**: This component was built from the ground up to be highly flexible and customizable. It leverages `cva` (class-variance-authority) to manage its numerous variants and sizes, making it easy to extend. State management (e.g., for the password toggle) is handled internally with `React.useState`.
-- **`DataTable`**: This component is designed to be generic and type-safe, using TypeScript generics (`<T>`) to handle any data structure. It includes features like sorting and row selection, with internal state management for these features. It is built upon the ShadCN `Table` component for a solid structural and stylistic foundation.
+- **`InputField`**: This component was built from the ground up to be highly flexible. It leverages `cva` (class-variance-authority) to manage its numerous variants and sizes, making it easy to extend. State management (e.g., for the password toggle) is handled internally with `React.useState`.
+
+- **`DataTable`**: This component is designed to be generic and type-safe, using TypeScript generics (`<T>`) to handle any data structure. It includes features like sorting and row selection. It is built upon the ShadCN `Table` component for a solid structural and stylistic foundation.
 
 ### Styling
 
 - **TailwindCSS**: Used for all styling to allow for rapid UI development and maintain a consistent design system.
-- **ShadCN UI**: Leveraged for its accessible and unstyled component primitives, which serve as a base for the custom components. This accelerates development without imposing a specific visual style.
-- **Dark Mode**: Implemented using `next-themes`, which handles theme switching and applies the `.dark` class to the `<html>` element, allowing for easy styling with Tailwind's `dark:` variants.
+- **ShadCN UI**: Leveraged for its accessible and unstyled component primitives, which serve as a base for the custom components.
+- **Dark Mode**: Implemented using `next-themes`, allowing for easy styling with Tailwind's `dark:` variants.
 
 ### Accessibility
 
 Basic accessibility has been addressed by:
 
 - Using semantic HTML elements.
-- Adding `aria-*` attributes for states like `aria-invalid` and `aria-label` for interactive elements like buttons and checkboxes to ensure they are understandable by screen readers.
+- Adding `aria-*` attributes for states like `aria-invalid` and `aria-label` for interactive elements to ensure they are understandable by screen readers.
