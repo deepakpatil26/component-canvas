@@ -9,8 +9,8 @@ This project is a submission for the React Component Development Assignment. It 
 
 ## ✨ Live Demo & Storybook
 
-- **Live Application:** `[Your Vercel/Deployment URL]`
-- **Storybook:** `[Your Storybook Deployment URL]`
+- **Live Application:** [Go Live](https://component-canvas.vercel.app/)
+- **Storybook:** 
 
 ## 🎬 Showcase
 
